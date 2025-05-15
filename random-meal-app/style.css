@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #d9e4f5);
+    min-height: 100vh;
+    display: flex; /* her şeyi ortaladık*/
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px); /* glassmorphism için*/
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+button#get-meal {
+    padding: 0.75rem 1.5rem;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button#get-meal:hover{
+    background-color: #4338ca;
+}
+
+#meal-container{
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* yemek görseli */
+
+#meal-container img{
+    width: 100%; /* görsel genişliği konteynır kadar */
+    max-width: 400px; /* maksimum genişlik */
+    border-radius: 15px; /* yuvarlatılmış köşeler */
+    margin: 1rem 0; /* üst-alt boşluk */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* hafif gölge efekti */
+}
+
+/* başlık ve paragraf arasındaki boşluk */
+
+#meal-container h2{
+    margin-bottom: 0.8rem;
+}
+
+#meal-container p{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* devamını gör butonu*/
+
+#toggle-instructions {
+    padding: 0.5rem 1rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#toggle-instructions:hover{
+    background-color: #4338ca;
+    transform: scale(1.05);
+}

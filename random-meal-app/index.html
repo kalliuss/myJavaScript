@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-Meal-APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'tr', // sayfa dili Türkçe
+      includedLanguages: 'en,fr,de,es,it,ru,zh-CN', // istersen çevrilmesini istediğin diller
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    
+    <section>
+    <h1 id="title">Bugün Ne Yesem?</h1>
+
+    <button id="get-meal">Tarif Getir</button>
+    
+    </section>
+
+    <section id="meal-container">
+
+        
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
