@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Movie Search🎬</h1>
+        <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+
+        <input type="text" placeholder="Film adı yazınız..." id="searchInp">
+        <div id="infoMessage" class="info-message">Film aramaya başlayın...</div>
+        <div id="results"></div>
+        <div id="results"></div>
+    </div>
+
+
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+          <button id="modalCloseBtn" class="modal-close-btn">&times;</button>
+          <div id="modalBody">
+            <!-- Detaylı film bilgisi buraya gelecek -->
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <script src="script.js"></script>   
+</body>
+</html>
